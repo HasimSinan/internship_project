@@ -63,3 +63,7 @@ class Page:
     def wait_text_in_element_present(self, *locator, text):
         self.wait.until(EC.text_to_be_present_in_element(locator, text),
                         message=f'Element by {locator} still visible')
+
+    def wait_elements_presence(self, *locator):
+        self.wait.until(EC.presence_of_all_elements_located(locator),
+                        message=f'Element by {locator} not present')

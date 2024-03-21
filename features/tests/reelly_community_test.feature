@@ -1,5 +1,5 @@
 # Created by HSM at 3/13/2024
-Feature: # Enter feature name here
+Feature: UI Tests for reelly.com community Page
   # Enter feature description here
 
   Scenario: User can open the community page
