@@ -6,6 +6,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from app.application import Application
 
+#Run Behave tests with Allure results
+#behave -f allure_behave.formatter:AllureFormatter -o test_results/ features/tests/reelly_community_test.feature
+
 
 def browser_init(context):
     """
